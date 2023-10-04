@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Vue.js project with CDN</title>
+    <script src="https://unpkg.com/vue@3"></script>
+
+  </head>
+
+
+  <body>
+    <div id="vue-app">
+{{text}}
+    </div>
+    <script>
+        const vm = Vue.createApp({
+            //optio{
+            data()  {
+                return{text: 'Start using Vue.js today!'}
+            }
+        })
+        vm.mount('#vue-app')
+        </script>
+  </body>
+</html>
